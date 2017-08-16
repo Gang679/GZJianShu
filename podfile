@@ -1,0 +1,5 @@
+platform :ios,'8.0'
+target '高仿简书'do
+pod 'Masonry'
+end
+

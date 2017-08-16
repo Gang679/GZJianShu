@@ -2,11 +2,12 @@
 //  AppDelegate.m
 //  高仿简书
 //
-//  Created by xinshijie on 2017/8/15.
+//  Created by xinshijie on 2017/7/15.
 //  Copyright © 2017年 Mr.quan. All rights reserved.
 //
 
 #import "AppDelegate.h"
+#import "ViewController.h"
 
 @interface AppDelegate ()
 
@@ -16,7 +17,9 @@
 
 
 - (BOOL)application:(UIApplication *)application didFinishLaunchingWithOptions:(NSDictionary *)launchOptions {
-    // Override point for customization after application launch.
+    self.window.backgroundColor = [UIColor whiteColor];
+    UINavigationController *nav = [[UINavigationController alloc]initWithRootViewController:[ViewController alloc]];
+    self.window.rootViewController = nav ;
     return YES;
 }
 
